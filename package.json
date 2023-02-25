@@ -26,7 +26,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --write .",
+        "lint": "eslint --max-warnings 0 --ignore-path .gitignore \"./**/*.{ts,js,yml,tsx,jsx}\"",
+        "lint:fix": "eslint --ignore-path .gitignore --fix \"./**/*.{ts,js,yml,tsx,jsx}\""
     },
     "eslintConfig": {
         "extends": [
@@ -45,5 +47,9 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "eslint": "^8.0.0",
+        "eslint-config-react-app": "^7.0.1"
     }
 }
