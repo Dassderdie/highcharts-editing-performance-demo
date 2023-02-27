@@ -6,7 +6,7 @@ interface HighchartsOptionsState {
 }
 
 const initialState: HighchartsOptionsState = {
-    title: 'Hello World!',
+    title: 'Lorem ipsum dolor sit amet',
 };
 
 export const highchartsOptionsSlice = createSlice({
